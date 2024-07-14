@@ -14,7 +14,7 @@ Architecture for using bedrock API of virginia and oregon region in seoul region
 * Client calls bedrock through bedrock runtime VPC endpoint
 * Client accesses bedrock runtime vpc endpoint through private hosted zone
 
-## Disable SSL Certificate Vertification
+### Disable SSL Certificate Vertification
 
 <img src="/images/disable-ssl.png" width="800"/>
 
