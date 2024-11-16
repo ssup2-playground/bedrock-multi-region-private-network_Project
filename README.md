@@ -4,6 +4,20 @@ bedrock-multi-region-private-network is a prototyping project that uses multi-re
 
 * [aws-terraform](https://github.com/ssup2-playground/bedrock-cross-region_aws-terraform) : Terraform for network infra and bedrock
 
+## Install
+
+* Run terraform
+
+```bash
+# Get terraform code
+$ git clone https://github.com/ssup2-playground/bedrock-multi-region-private-network_aws-terraform.git && rm ./bedrock-multi-region-private-network_aws-terraform/terraform.tf
+
+# Run terraform
+$ cd bedrock-multi-region-private-network_aws-terraform
+$ terraform init
+$ terraform apply
+```
+
 ## Architecture
 
 <img src="/images/architecture.png" width="700"/>
@@ -23,16 +37,3 @@ The client expects a “Custom Domain (bedrock.in)” certificate, but actually 
 * AWS cli : `--no-verfiy-ssl --endpoint-url "https://virginia.runtime.bedrock.in”`
 * Python Boto3 : `client(verify=false, endpoint_url=https://virginia.runtime.bedrock.in)`
 
-## Install
-
-* Run terraform
-
-```bash
-# Get terraform code
-$ git clone https://github.com/ssup2-playground/bedrock-multi-region-private-network_aws-terraform.git && rm ./bedrock-multi-region-private-network_aws-terraform/terraform.tf
-
-# Run terraform
-$ cd bedrock-multi-region-private-network_aws-terraform
-$ terraform init
-$ terraform apply
-```
